@@ -1,9 +1,41 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-SemiBold.woff') format('woff2'),
+        url('../font/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Bold.woff2') format('woff2'),
+        url('../font/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Medium.woff2') format('woff2'),
+        url('../font/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    font-family: 'Poppins';
+}
+
 .navbar{
     width: 1320px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: 600;
 }
 .logo{
     display: flex;
@@ -13,6 +45,7 @@
 .navlist-wrapper{
     display: flex ;
     gap: 40px;
+    
 }
 .nav-list{
 
@@ -37,4 +70,5 @@
     color: #fff;
     outline: none;
     border: none;
+    cursor: pointer;
 }
