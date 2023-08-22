@@ -4,6 +4,7 @@ import Navbar from './components/nav'
 import Map from './components/map'
 import Card from './components/card/card'
 import Newspaper from './components/newspaper';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Map/>
       <Card/>
       <Newspaper/>
+      <Footer/>
     </div>
   );
 }
