@@ -3,7 +3,8 @@ import time from './img/time.svg'
 import people from './img/people.svg'
 import location from './img/Vector.svg'
 import star from './img/star.svg'
-export class Item extends React.Component{
+
+class Item extends React.Component{
     render(){
         const  {data} = this.props;
         return (
@@ -25,3 +26,21 @@ export class Item extends React.Component{
         )
     }
 }
+
+class Controller extends React.Component{
+    render(){
+        return(
+
+            <div className="controller-wrapper">
+                <div className="control-path prev">Prev</div>
+                <div className="control-path ">01</div>
+                <div className="control-path ">02</div>
+                <div className="control-path ">03</div>
+                <div className="control-path ">04</div>
+                <div className="control-path next">Next</div>
+
+            </div>
+        )
+    }
+}
+export {Item, Controller}
